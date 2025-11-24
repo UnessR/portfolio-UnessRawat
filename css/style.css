@@ -1,35 +1,35 @@
-/* CSS Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
+/* BASE STYLES */
 body {
-    font-family: Arial, sans-serif; /* Font */
-    background-color: #f4f4f9; /* Background color */
-    color: #333; /* Text color */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
 }
 
-/* Header */
+/* HEADER */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
+    background-color: #064663;
+    padding: 20px;
     text-align: center;
+    color: #fff;
 }
 
-/* Navigation Bar */
-nav {
-    background-color: #333;
-}
 
+/* NAVIGATION */
 nav ul {
     display: flex;
-    list-style: none;
     justify-content: center;
+    list-style: none;
+    background-color: #041C32;
+    padding: 10px 0;
 }
 
 nav ul li {
@@ -37,62 +37,53 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
+/* 🔥 Hover effect for nav links */
 nav ul li a:hover {
-    color: #4CAF50;
+    color: #FFD369;
+    text-decoration: underline;
 }
 
-/* Main Content */
-main {
-    max-width: 900px;
+/* MAIN CONTENT */
+section {
+    padding: 40px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: white;
+    max-width: 900px;
+    border-radius: 10px;
 }
 
-/* Form Styling */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form input, form textarea, form button {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: inherit;
-}
-
-form button {
-    background-color: #4CAF50;
+/* BUTTONS */
+button {
+    padding: 10px 20px;
+    background-color: #064663;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-form button:hover {
-    background-color: #45a049;
+/* 🔥 Hover effect for buttons */
+button:hover {
+    background-color: #0A8CC4;
+    transform: scale(1.05);
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
+    padding: 20px;
+    background: #041C32;
+    color: white;
+    margin-top: 40px;
 }
-#projects {
-    padding: 40px;
-    background: #f7f7f7;
-}
+
 
 .project {
     max-width: 800px;
@@ -106,5 +97,21 @@ footer {
     border-radius: 10px;
     border: 2px solid #ddd;
     margin-bottom: 20px;
+}
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #064663;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.profile-img:hover {
+    transform: scale(1.08);
+    border-color: #0A8CC4;
 }
 
